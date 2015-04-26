@@ -1,0 +1,86 @@
+<wicket:extend xmlns:wicket="http://www.w3.org/1999/XSL/Transform">
+
+
+    <form wicket:id="formFilter">
+
+        <div wicket:id="step1">
+            <span>Seleccione los maquinistas y turnos que desea incluir en el proceso de Asignaci&oacute;n</span>
+            <br/><br/>
+
+            <div style="clear:both;width: 100%"></div>
+
+            <table id="table-maquinistas" class="table table-bordered table-striped"
+                   style="width: 48%;float:left;">
+                <thead>
+                <tr>
+                    <th><span>Maquinista</span><i class="sort"></i></th>
+                    <th><span>id</span><i class="sort"></i></th>
+                    <th><span>Incluir</span><i class="sort"></i></th>
+                </tr>
+                </thead>
+                <tbody wicket:id="maquinistaGroup">
+                <tr wicket:id="maquinistaDataView">
+                    <td><span wicket:id="name"/></td>
+                    <td><span wicket:id="id"/></td>
+                    <td><input type="checkbox" wicket:id="incluir"/></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table id="table-turno" class="table table-bordered table-striped" style="width: 48%;float:right">
+                <thead>
+                <tr>
+                    <th><span>Turno</span><i class="sort"></i></th>
+                    <th><span>id</span><i class="sort"></i></th>
+                    <th><span>Incluir</span><i class="sort"></i></th>
+                </tr>
+                </thead>
+                <tbody wicket:id="turnoGroup">
+                <tr wicket:id="turnoDataView">
+                    <td><span wicket:id="name"/></td>
+                    <td><span wicket:id="id"/></td>
+                    <td><input type="checkbox" wicket:id="incluir"/></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div style="clear:both;width: 100%"></div>
+
+            <center>
+                <input type="button" value="Asignar" class="btn" wicket:id="buttonAsignar"/>
+            </center>
+        </div>
+
+        <div wicket:id="step2">
+            <div wicket:id="modalSave"></div>
+
+            <span>Resultado proceso asignaci&oacute;n</span>
+            <br/><br/>
+
+            <div style="clear:both;width: 100%"></div>
+
+            <table id="table-asignacion" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th><span>Maquinista</span><i class="sort"></i></th>
+                    <th><span>Turno</span><i class="sort"></i></th>
+                </tr>
+                </thead>
+                <tbody wicket:id="asignacionGroup">
+                <tr wicket:id="asignacionDataView">
+                    <td><span wicket:id="maquinista"/></td>
+                    <td><span wicket:id="turno"/></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <center>
+                <input type="button" value="Cancelar" class="btn" wicket:id="buttonCancelar"/>
+                <input type="button" value="Guardar" class="btn" wicket:id="buttonGuardar"/>
+            </center>
+        </div>
+
+    </form>
+
+
+</wicket:extend>

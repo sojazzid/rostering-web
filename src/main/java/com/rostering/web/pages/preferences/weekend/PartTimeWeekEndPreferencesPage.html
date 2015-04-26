@@ -1,0 +1,62 @@
+<wicket:extend xmlns:wicket="http://www.w3.org/1999/XSL/Transform">
+    <form wicket:id="editModalForm" class="form-horizontal form-container" style="border:none">
+        <div wicket:id="editModal"></div>
+    </form>
+
+    <form wicket:id="formFilter" class="form-inline actions-toolbar">
+
+
+        <div class="actions-toolbar-inner">
+            <select wicket:id="driverField"></select>
+
+            <select wicket:id="shiftField"></select>
+
+            <button class="btn btn-primary" wicket:id="searchButton">
+                <i class="icon-filter icon-white"></i>&nbsp;Buscar
+            </button>
+        </div>
+
+        <div class="clearfix"></div>
+        <br />
+
+        <div wicket:id="tableContainer">
+            <table id="table-preferences" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th><span>Maquinista</span><i class="sort"></i></th>
+                    <th><span>Turno</span><i class="sort"></i></th>
+                    <th><span>Hora Inicio</span><i class="sort"></i></th>
+                    <th><span>Estación Inicio</span><i class="sort"></i></th>
+                    <th><span>Hora Fin</span><i class="sort"></i></th>
+                    <th><span>Estación Fin</span><i class="sort"></i></th>
+                    <th><span>Duración</span><i class="sort"></i></th>
+                    <th><span>Descanso</span><i class="sort"></i></th>
+                    <th><span>Jornada</span><i class="sort"></i></th>
+                    <th><span>Preferencia</span><i class="sort"></i></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody wicket:id="preferencesGroup">
+                <tr wicket:id="preferencesDataView">
+                    <td><span wicket:id="maquinsta"/></td>
+                    <td><span wicket:id="turno"/></td>
+                    <td><span wicket:id="hrInicio"/></td>
+                    <td><span wicket:id="estinicio"/></td>
+                    <td><span wicket:id="hrFin"/></td>
+                    <td><span wicket:id="estFin"/></td>
+                    <td><span wicket:id="HrsTrabajo"/></td>
+                    <td><span wicket:id="HrsDescanso"/></td>
+                    <td><span wicket:id="jornada"/></td>
+                    <td><span wicket:id="preferencia"/></td>
+                    <td><a class="glyphicon glyphicon-floppy-remove" wicket:id="edit"><i class="icon-pencil"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </form>
+
+
+</wicket:extend>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<wicket:head>
+    <meta charset="utf-8">
+    <meta name="author" content="Survalley">
+    <title>
+        <wicket:message key="app_title"/>
+    </title>
+</wicket:head>
+
+<body>
+
+
+<div id="main-nav" class="navbar">
+
+    <ul class="nav pull-right">
+        <li><a href="#"><i class="icon-user"></i> Logout</a></li>
+    </ul>
+    <!-- /authentication -->
+
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Asignaci&oacute;n<b class="caret"></b></a>
+
+                <div class="dropdown-menu megamenu">
+                    <ul>
+                        <li><a href="/fulltime">Asignar Maquinistas Full-time</a></li>
+                        <li><a href="/parttimewe">Asignar Maquinistas Part-time Fin de Semana</a></li>
+                        <li><a href="/parttimewd">Asignar Maquinistas Part-time Semana</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Preferencias<b class="caret"></b></a>
+
+                <div class="dropdown-menu megamenu">
+                    <ul>
+                        <li><a href="/fullpreferences">Ingresar Preferencias Full-time</a></li>
+                        <li><a href="/wepreferences">Ingresar Preferencias Part-time Fin de Semana</a></li>
+                        <li><a href="/wdpreferences">Ingresar Preferencias Part-time Semana</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div id="header" class="row">
+        <div class="span12 icon">
+            <h3 wicket:id="pageTitle"></h3>
+        </div>
+    </div>
+
+    <div class="modal-backdrop fade in hide" wicket:id="loadingPanel">
+        <div class="loading"></div>
+    </div>
+
+    <div wicket:id="feedback"></div>
+
+
+    <div class="row" id="container">
+
+        <div id="content" class="span12">
+            <wicket:child/>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
