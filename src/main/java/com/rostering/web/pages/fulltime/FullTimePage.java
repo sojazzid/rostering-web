@@ -1,13 +1,14 @@
 package com.rostering.web.pages.fulltime;
 
-import cl.upla.memoria.sam.business.rostering.RosteringService;
-import cl.upla.memoria.sam.business.rostering.Util;
-import cl.upla.memoria.sam.business.rostering.exception.RosteringException;
-import cl.upla.memoria.sam.dao.DriverDao;
-import cl.upla.memoria.sam.dao.PreferenceDao;
-import cl.upla.memoria.sam.dao.ShiftDao;
-import cl.upla.memoria.sam.dao.exception.PersistenceException;
-import cl.upla.memoria.sam.model.*;
+
+import com.rostering.business.rostering.RosteringService;
+import com.rostering.business.rostering.RosteringUtil;
+import com.rostering.business.rostering.exception.RosteringException;
+import com.rostering.dao.DriverDao;
+import com.rostering.dao.PreferenceDao;
+import com.rostering.dao.ShiftDao;
+import com.rostering.dao.exception.PersistenceException;
+import com.rostering.model.*;
 import com.rostering.web.pages.fulltime.modal.ModalSave;
 import com.rostering.web.pages.template.BasePage;
 import org.apache.wicket.ajax.AjaxRequestTarget;
@@ -164,7 +165,7 @@ public class FullTimePage extends BasePage {
 
                     String errorMessage = null;
 
-                    List<Preference> preferenceList = Util.toPreference(maquinistas, turnos);
+                    List<Preference> preferenceList = RosteringUtil.toPreference(maquinistas, turnos);
 
                     for (Preference preference : preferenceList) {
 
@@ -201,7 +202,7 @@ public class FullTimePage extends BasePage {
 
                     if (asignaciones != null) {
                         if (!asignaciones.isEmpty()) {
-                            asignacionDataView.setDefaultModelObject(Util.justAllocated(asignaciones));
+                            asignacionDataView.setDefaultModelObject(RosteringUtil.justAllocated(asignaciones));
 
                             step1.setVisible(false);
                             step2.setVisible(true);

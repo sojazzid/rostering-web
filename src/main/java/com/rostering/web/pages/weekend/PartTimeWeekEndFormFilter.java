@@ -1,6 +1,6 @@
 package com.rostering.web.pages.weekend;
 
-import cl.upla.memoria.sam.model.Driver;
+import com.rostering.model.Driver;
 import com.rostering.common.FormFilter;
 
 import java.util.List;

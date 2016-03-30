@@ -1,8 +1,8 @@
 package com.rostering.web.pages.weekend.modal;
 
-import cl.upla.memoria.sam.dao.AllocationDao;
-import cl.upla.memoria.sam.dao.exception.PersistenceException;
-import cl.upla.memoria.sam.model.Allocation;
+import com.rostering.dao.AllocationDao;
+import com.rostering.dao.exception.PersistenceException;
+import com.rostering.model.Allocation;
 import de.agilecoders.wicket.markup.html.bootstrap.dialog.Modal;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.markup.html.form.Form;

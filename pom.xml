@@ -30,16 +30,16 @@
 
         <!--  ROSTERING SERVICE   -->
         <dependency>
-            <groupId>com.rostering</groupId>
-            <artifactId>rostering-service</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+        <groupId>com.rostering</groupId>
+        <artifactId>rostering-service</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
 
-        <dependency>
+        <!--dependency>
             <groupId>sam</groupId>
             <artifactId>rostering</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
+        </dependency-->
 
         <!--  WICKET DEPENDENCIES -->
         <dependency>

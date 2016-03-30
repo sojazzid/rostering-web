@@ -1,17 +1,19 @@
 package com.rostering.web.pages.preferences.weekend;
 
-import cl.upla.memoria.sam.business.rostering.RosteringService;
-import cl.upla.memoria.sam.dao.DriverDao;
-import cl.upla.memoria.sam.dao.PreferenceDao;
-import cl.upla.memoria.sam.dao.ShiftDao;
-import cl.upla.memoria.sam.dao.exception.PersistenceException;
-import cl.upla.memoria.sam.model.*;
+import com.rostering.business.rostering.RosteringService;
+import com.rostering.dao.DriverDao;
+import com.rostering.dao.PreferenceDao;
+import com.rostering.dao.ShiftDao;
+import com.rostering.dao.exception.PersistenceException;
+import com.rostering.model.*;
+
 import com.rostering.web.components.dropdown.GenericDropDown;
 import com.rostering.web.components.dropdown.renderer.DriverRenderer;
 import com.rostering.web.components.dropdown.renderer.ShiftRenderer;
 import com.rostering.web.pages.preferences.weekend.modal.PartTimeWeekEndEditModal;
 import com.rostering.web.pages.preferences.weekend.modal.PartTimeWeekEndEditModalFilter;
 import com.rostering.web.pages.template.BasePage;
+
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.AjaxLink;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;

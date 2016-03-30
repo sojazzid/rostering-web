@@ -1,7 +1,7 @@
 package com.rostering.web.pages.preferences.weekday;
 
-import cl.upla.memoria.sam.model.Driver;
-import cl.upla.memoria.sam.model.Shift;
+import com.rostering.model.Driver;
+import com.rostering.model.Shift;
 import com.rostering.common.FormFilter;
 
 import java.util.List;

@@ -1,8 +1,8 @@
 package com.rostering.web.pages.preferences.fulltime.modal;
 
-import cl.upla.memoria.sam.dao.PreferenceDao;
-import cl.upla.memoria.sam.dao.exception.PersistenceException;
-import cl.upla.memoria.sam.model.Preference;
+import com.rostering.dao.PreferenceDao;
+import com.rostering.dao.exception.PersistenceException;
+import com.rostering.model.Preference;
 import com.rostering.web.components.ModalButton;
 import com.rostering.web.components.dropdown.GenericDropDown;
 import com.rostering.web.pages.preferences.fulltime.FullPreferencesPage;

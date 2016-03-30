@@ -1,26 +1,30 @@
 package com.rostering.web.pages.preferences.fulltime;
 
-import cl.upla.memoria.sam.business.rostering.RosteringService;
-import cl.upla.memoria.sam.dao.DriverDao;
-import cl.upla.memoria.sam.dao.PreferenceDao;
-import cl.upla.memoria.sam.dao.ShiftDao;
-import cl.upla.memoria.sam.dao.exception.PersistenceException;
-import cl.upla.memoria.sam.model.*;
+import com.rostering.business.rostering.RosteringService;
+import com.rostering.dao.DriverDao;
+import com.rostering.dao.PreferenceDao;
+import com.rostering.dao.ShiftDao;
+import com.rostering.dao.exception.PersistenceException;
+import com.rostering.model.*;
 import com.rostering.web.components.dropdown.GenericDropDown;
 import com.rostering.web.components.dropdown.renderer.DriverRenderer;
 import com.rostering.web.components.dropdown.renderer.ShiftRenderer;
+
 import com.rostering.web.pages.preferences.fulltime.modal.FullEditModal;
 import com.rostering.web.pages.preferences.fulltime.modal.FullEditModalFilter;
 import com.rostering.web.pages.template.BasePage;
+
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.AjaxLink;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
+
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.CheckGroup;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
+
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
 import java.text.SimpleDateFormat;

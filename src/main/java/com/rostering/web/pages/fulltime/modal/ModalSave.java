@@ -1,8 +1,9 @@
 package com.rostering.web.pages.fulltime.modal;
 
-import cl.upla.memoria.sam.dao.AllocationDao;
-import cl.upla.memoria.sam.dao.exception.PersistenceException;
-import cl.upla.memoria.sam.model.Allocation;
+
+import com.rostering.dao.AllocationDao;
+import com.rostering.dao.exception.PersistenceException;
+import com.rostering.model.Allocation;
 import com.rostering.web.components.ModalButton;
 import de.agilecoders.wicket.markup.html.bootstrap.dialog.Modal;
 import org.apache.wicket.ajax.AjaxRequestTarget;

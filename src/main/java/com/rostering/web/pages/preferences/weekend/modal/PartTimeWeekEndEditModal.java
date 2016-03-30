@@ -1,12 +1,14 @@
 package com.rostering.web.pages.preferences.weekend.modal;
 
-import cl.upla.memoria.sam.dao.PreferenceDao;
-import cl.upla.memoria.sam.dao.exception.PersistenceException;
-import cl.upla.memoria.sam.model.Preference;
+import com.rostering.dao.PreferenceDao;
+import com.rostering.dao.exception.PersistenceException;
+import com.rostering.model.Preference;
 import com.rostering.web.components.ModalButton;
 import com.rostering.web.components.dropdown.GenericDropDown;
 import com.rostering.web.pages.preferences.weekend.PartTimeWeekEndPreferencesPage;
+
 import de.agilecoders.wicket.markup.html.bootstrap.dialog.Modal;
+
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Form;

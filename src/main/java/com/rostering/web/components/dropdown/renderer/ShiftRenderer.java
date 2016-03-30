@@ -1,7 +1,6 @@
 package com.rostering.web.components.dropdown.renderer;
 
-import cl.upla.memoria.sam.model.Driver;
-import cl.upla.memoria.sam.model.Shift;
+import com.rostering.model.Shift;
 import org.apache.wicket.markup.html.form.IChoiceRenderer;
 
 public class ShiftRenderer implements IChoiceRenderer<Shift> {

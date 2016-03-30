@@ -1,8 +1,8 @@
 package com.rostering.web.pages.fulltime;
 
-import cl.upla.memoria.sam.model.Driver;
-import com.rostering.model.Maquinista;
+
 import com.rostering.common.FormFilter;
+import com.rostering.model.Driver;
 
 import java.util.List;
 
