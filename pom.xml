@@ -23,7 +23,7 @@
 		<java.inject>1</java.inject>
 		<logger.slf4j>1.6.4</logger.slf4j>
 		<logger.log4j>1.2.16</logger.log4j>
-		<testing.junit>4.10</testing.junit>
+		<testing.junit>4.13.1</testing.junit>
         <sqlite.version>3.7.2</sqlite.version>
     </properties>
     <dependencies>
